@@ -1,0 +1,58 @@
+/* Contact Section  */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.contact-section h2 {
+    font-size: 25px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.contact-section .group form label {
+    padding-bottom: 10px;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    border: solid 2px var(--link-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    background-color: var(--link-color);
+    color: #ffffff;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 770px) {
+    .contact-section .group {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        padding: 0 20px;
+    }
+}

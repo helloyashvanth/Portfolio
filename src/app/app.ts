@@ -3,10 +3,11 @@ import { NavComponent } from "./components/nav-component/nav-component";
 import { HeroComponent } from "./components/hero-component/hero-component";
 import { SkillsComponent } from "./components/skills-component/skills-component";
 import { ProjectsComponent } from "./components/projects-component/projects-component";
+import { ContactComponent } from "./components/contact-component/contact-component";
 
 @Component({
   selector: 'app-root',
-  imports: [NavComponent, HeroComponent, SkillsComponent, ProjectsComponent],
+  imports: [NavComponent, HeroComponent, SkillsComponent, ProjectsComponent, ContactComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

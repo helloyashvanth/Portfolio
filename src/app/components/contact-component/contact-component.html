@@ -1,0 +1,21 @@
+<section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="group">
+        <div class="text">
+            DM me for queries.
+        </div>
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <label for="name">Name</label>
+            <input id="name" type="text" formControlName="name" placeholder="Enter your name" />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" formControlName="email" placeholder="Enter your email" />
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10" formControlName="message" placeholder="Your message"></textarea>
+
+            <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+        </form>
+    </div>
+</section>
