@@ -1,0 +1,87 @@
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    gap: 35px;
+    margin: 50px 0;
+    margin-bottom: 40px;
+}
+
+.hero-section .text {
+    flex: 6;
+}
+
+.hero-section .headshot {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section .headshot img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.hero-section .text h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.hero-section .text h4 {
+    margin-bottom: 10px;
+}
+
+.hero-section .text p {
+    text-align: justify;
+}
+
+.hero-section .text .links {
+    margin-top: 20px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 15px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.hero-section a span {
+    margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 770px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-section .headshot img {
+        width: 325px;
+        height: 330px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 35px;
+    }
+
+    .hero-section .text h4 {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        padding: 0 20px;
+    }
+}

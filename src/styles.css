@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --text-color: black;
+    --link-color: blue;
+    --background-color: #ffffff;
+    --border-color: black;
+}
+
+.dark-theme {
+    --text-color: #ffffff;
+    --link-color: #4dabf7;
+    --background-color: #121212;
+    --border-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
