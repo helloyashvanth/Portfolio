@@ -1,0 +1,103 @@
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 75px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+nav .right a:nth-child(3) {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+nav .right button span {
+    margin-left: 5px;
+}
+
+nav .right button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav .right button:hover {
+    opacity: 0.8;
+}
+
+nav .right button i {
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 770px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .left a {
+        font-size: 20px;
+    }
+
+    nav .right a:nth-child(3) {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    nav .right button {
+        background-color: transparent;
+        color: var(--text-color);
+        padding: 0;
+    }
+
+    nav .right button {
+        background-color: transparent;
+        color: var(--text-color);
+        padding: 0;
+    }
+
+    nav .right button span {
+        display: none;
+    }
+}

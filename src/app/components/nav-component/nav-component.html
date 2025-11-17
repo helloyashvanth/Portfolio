@@ -1,0 +1,33 @@
+<!-- NAVBAR -->
+<nav>
+    <div class="left">
+        <a routerLink="/">YASHVANTH T V</a>
+    </div>
+
+    <div class="right">
+        <a href="https://github.com/helloyashvanth" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/yashvanth-tv/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+
+        <a href="mailto:hello.yashvanth@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+        </a>
+
+        <a href="tel:+91 9043506990">
+            <i class="fa-solid fa-phone"></i>
+            <span>Contact</span>
+        </a>
+
+        <button (click)="toggleTheme()">
+            <i [class]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
+            <span>{{currentMode}}</span>
+        </button>
+    </div>
+</nav>
