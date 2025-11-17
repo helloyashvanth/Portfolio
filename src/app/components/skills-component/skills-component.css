@@ -1,0 +1,63 @@
+/* Skills Section */
+.skills-section {
+    padding: 0 50px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell1,
+.skills-section .cells .cell2,
+.skills-section .cells .cell3,
+.skills-section .cells .cell4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--border-color);
+
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.skills-section .cells .cell1 img,
+.skills-section .cells .cell2 img,
+.skills-section .cells .cell3 img,
+.skills-section .cells .cell4 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    object-fit: contain;
+}
+
+.skills-section .cells .cell1 span,
+.skills-section .cells .cell2 span,
+.skills-section .cells .cell3 span,
+.skills-section .cells .cell4 span {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 770px) {
+    .skills-section {
+        padding: 0 20px;
+    }
+}
